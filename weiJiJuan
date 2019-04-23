@@ -1,0 +1,43 @@
+1.判断一个数是否为奇数
+  public static boolean isOdd(int i) {
+
+  }
+2.
+  public static boolean isOdd(int i) {
+    if ( i % 2 == 1 || i % 2 == -1 ) {
+        return true;
+    } else {
+        return false;
+    }
+}
+3.
+  public static boolean isOdd(int i) {
+      return i % 2 == 1 || i % 2 == -1;
+  }
+4.
+  public static boolean isOdd1(int i) {
+      return (i % 2) != 0;
+  }
+5.
+  public static boolean isOdd(int i) {
+    return i >> 1 << 1 != i;
+}
+6.
+  public static boolean isOdd(int i) {
+    return (i & 1) == 1;
+}
+
+位运算：1.7 的HashMap中，有一个典型的例子，计算key对应的数组下标时，用位运算来代替求余操作。
+  static int indexFor(int h, int length) {
+      // assert Integer.bitCount(length) == 1 : "length must be a non-zero power of 2";
+      return h & (length-1);
+  }
+  当容量是2^n时，h & (length - 1) == h % length 这个表达式就成立了。
+  1.位运算效率非常高
+  2.保证了元素在哈希表中均匀地散列。
+位运算：变成二进制，全部为1则为1，否则为0.
+
+HashMap的hash计算也用到了位运算。还有集合类的扩容也经常用到了位运算。
+ThreadPoolExecutor中也用到了位运算。
+
+https://mp.weixin.qq.com/s/eG4fNN25n28lfzeCu-jrTA
