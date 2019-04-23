@@ -79,6 +79,8 @@
     java.io.InoutStream#read()
     java.util.AbstractList#indexOf()
    23.访问者模式(提供一个方便的可维护的方式来操作一组对象。它使得你在不改变操作的对象前提下，可以修改或者扩展对象的行为。)
+   
+   https://mp.weixin.qq.com/s/QwlkU1T4RQaRqgs9uI3cPg
     
     
     
