@@ -1,0 +1,86 @@
+一、JDK中的设计模式
+  (1)结构性模式
+  1.适配器模式
+    java.util.Arrays#asList()
+    java.io.InputStreamReader(InputStream)
+    java.io.OutputStreamWriter(OutputStream)
+    java.xml.bind.annotation.adapters.xmlAdapter#mashal()
+    java.xml.bind.annotation.adapters.xmlAdapter#mashal()
+  2.桥接模式(将抽象和抽象的具体实现进行解耦，这样可以使得抽象和抽象的具体实现可以独立进行变化。)
+    JDBC
+  3.组合模式（让客户端看起来在处理单个对象和对象的组合是平等的，换句话说，某个类型的方法同时也接受自身类型作为参数。）
+    Java.util.List#addAll(Collection)
+    Java.util.Set#addAll(Collection)
+    Java.util.Map#addAll(Map)
+  4装饰者模式
+    Java.io.BufferedInputStream(InputStream)
+  5.门面模式
+     java.lang .Class
+  6.享元模式(使用缓存来减少对小对象的访问时间)
+    Java.lang.Integer#valueOf(int)
+    Java.lang.Bollean#valueOf(boolean)
+    Java.lang.Byte#valueOf(byte)
+    Java.lang.Character#valueOf(char)
+  7.代理模式
+    java.lang.reflect.Proxy
+    （2）创建模式
+  8.抽象工厂模式
+    java.sql.DriverManger#getConnection()
+    java.sql.connection#createStatement()
+    java.text.NumberFormat#getInstance()
+    java.util.Calender#getInstance()
+  9.建造者模式
+    Java.lang.StringBuilder#apend()
+    java.lang.StringBuffer#append()
+    java.sql.PreparedStatement
+  10.工厂方法
+    Java.lang.Proxy#newProxyInstance()
+    java.lang.Object#toString()
+    java.lang.Class#newInstance()
+    java.lang.Class#forName()
+    Java.lang.Bollean#valueOf(String)
+  11.原型模式（使得类的实例能够生成自身的拷贝。）
+    java.lang.Object#clone()
+    java.lang.Cloneable
+  12.单例模式
+    java.langRuntime#getRuntime()
+    spring中的bean
+  13.行为模式（通过把请求从一个对象传递到链条中下一个对象的方式来解除对象之间的耦合，直到请求被处理完毕。）
+    java.util.logging.Logger#log()
+    javax.servlet.Filter#doFilter()
+  14.命令模式（将命令包装在对象中，以便可以将其存储，传递到方法中，并像任何其他对象一样返回。）
+    java.lang.Runnable()
+  15.解释器模式
+    Java.text.Format
+  16.迭代器模式
+    Java.uil.Iterator
+  17.中介者模式(通过使用一个中间对象来进行消息分发以及减少类之间的直接依赖。)
+    Java.util.Timer
+    java.util.concurrent.Executor#execute()
+    java.util.concurrent.ExecutorService#submit()
+    java.lang.reflect.Method#invoke()
+  18.空对象模式(它允许您抽象空对象的处理。)
+    java.util.Collections#emptyList()
+    java.util.Collections#emptyMap()
+    java.util.Collections#emptySet()
+  19.观察者模式
+    java.util.EventListener
+    java.servlet.http.HttpSessionBindingListener
+    java.servlet.http.HttpSessionAttributeListener
+  20.状态模式（允许您在运行时根据内部状态轻松更改对象的行为。）
+    Java.uil.Iterator
+    Java.faces.lifecycle.LifeCyele#execute()
+  21.策略模式(使用这个模式来将一组算法封装成一系列对象)
+    java.util.Comparator#comoare()
+    java.servlet.http.HttpServlet
+    java.servlet.Filter#doFilter()
+  22.模板方法模式（让子类可以重写方法的一部分，而不是整个重写，你可以控制子类需要重写那些操作。）
+    Java.util.Collections#sort()
+    java.io.InoutStream#read()
+    java.util.AbstractList#indexOf()
+   23.访问者模式(提供一个方便的可维护的方式来操作一组对象。它使得你在不改变操作的对象前提下，可以修改或者扩展对象的行为。)
+    
+    
+    
+    
+    
